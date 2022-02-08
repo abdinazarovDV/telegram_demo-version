@@ -1,0 +1,88 @@
+
+dataModel
+
+    users = [
+        {
+            userId: Date % (10**6),
+            username: abdinazarov17,             // unic, only a-zA-Z0-9
+            profileImg: '/img/951843img.png',
+            phone: 998990026162                  // unic
+            password: sha256,                    // only 0-9
+            signDate: Date.now(),
+            contacts: [
+                // userIds ... 
+            ]
+        }
+    ]
+
+    message = [
+        {
+            userId: Date % (10**6),                     //kimdan
+            messageId: Date % (10**8),
+            content: {
+                main: file or text,
+                text: text,
+                mimytepe: png, jpg, jpeg, mp4, 'text'
+            }
+            toUserId: Date % (10**6),                   //kimga
+        }
+    ]
+
+
+route 
+
+    /contacts
+        GET       /*
+                    tokendan userId, shunga mos contacts arraydagi useridlarga
+                    mos users dan user lar qaytariladi
+                    ?search='username' users dan find qilinadi
+                  */
+
+        /writtencontacts   
+                GET
+                  /*
+                    tokendan userId ajratiladi message dan shu boyicha 
+                    filterlanadi va toUserId boyicha setlanadi,
+                    toUserId boyicha usersdan user olib jonatiladi
+                  */
+        
+        POST      /*
+                    username bn token keladi tokenni userId si mosiga
+                    contacts ga shu usernameni userId push qilinadi
+                  */
+        
+        DELETE      /token userId, userId(delete qilinadiganiki) contact dan splice
+
+
+    /messages
+        GET         /*
+                        tokenni userId va toUserId keladi, message dan filter
+                        profileImg va username qowib jonatiladi
+                    */
+
+        POST        /token userId dan toUserId ga 
+        PUT         /token userId , toUserId, messageId  { text: "qwerty" }
+        DELETE      /token userId, toUserId, messageId
+
+
+    /login
+        POST        /token beriladi register bo'lgan bo'lsa
+
+    /register
+        POST        /*
+                        username unic, harf va son, 0<length<15, en-En
+                        password only number,
+                        file: tashlangan bo'lsa tipi png jpg jpeg
+                        token beriladi
+                    */
+
+
+
+
+
+
+
+
+
+contact, message controllerda default userId turbdi tokenda 
+qaytganiga almawtir

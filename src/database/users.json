@@ -1,0 +1,58 @@
+[
+    {
+        "userId": 641965,
+        "username": "abdinazarov17",
+        "profileImg": "/avatar/789456123av.jpg",
+        "password": "15b9e0db83ca5103d0d81f272584932103478a4850cb788ee4fff20b7ab5c5ba",
+        "signDate": 1642190172681,
+        "contacts": [
+            695148,
+            651657,
+            648830
+        ]
+    },
+    {
+        "userId": 695148,
+        "username": "gulyamov",
+        "profileImg": "/avatar/789456123av.jpg",
+        "password": "15b9e0db83ca5103d0d81f272584932103478a4850cb788ee4fff20b7ab5c5ba",
+        "signDate": 1642222180905,
+        "contacts": [
+            641965
+        ]
+    },
+    {
+        "userId": 651657,
+        "username": "sobirov",
+        "profileImg": "/avatar/789456123av.jpg",
+        "password": "15b9e0db83ca5103d0d81f272584932103478a4850cb788ee4fff20b7ab5c5ba",
+        "signDate": 1642230358973,
+        "contacts": []
+    },
+    {
+        "userId": 889336,
+        "username": "fotograph",
+        "profileImg": "/avatar/244889336pexels-imad-clicks-10656139.jpg",
+        "password": "15b9e0db83ca5103d0d81f272584932103478a4850cb788ee4fff20b7ab5c5ba",
+        "signDate": 1642244889337,
+        "contacts": [
+            641965
+        ]
+    },
+    {
+        "userId": 648830,
+        "username": "interyer",
+        "profileImg": "/avatar/247648829gettyimages-1217175793-170667a.jpg",
+        "password": "15b9e0db83ca5103d0d81f272584932103478a4850cb788ee4fff20b7ab5c5ba",
+        "signDate": 1642247648830,
+        "contacts": []
+    },
+    {
+        "userId": 617707,
+        "username": "sardor",
+        "profileImg": "/avatar/350617707jakob-owens-6bY_J9bYBm8-unsplash.jpg",
+        "password": "15b9e0db83ca5103d0d81f272584932103478a4850cb788ee4fff20b7ab5c5ba",
+        "signDate": 1642350617707,
+        "contacts": []
+    }
+]
